@@ -40,7 +40,7 @@ ol {
   list-style: none;
 }
 
-/* Custom scrollbar */
+/* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
@@ -63,12 +63,11 @@ ol {
   white-space: nowrap;
 }
 
-/* Лейаут */
+/* Layout */
 .content {
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  inline-size: 1140px;
 }
 
 .result__video-container {
@@ -111,7 +110,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .content__list {
@@ -173,6 +172,7 @@ ol {
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 196px;
 }
 
 .content__video-card-description {
@@ -181,6 +181,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
@@ -276,7 +277,7 @@ ol {
   opacity: 1;
 }
 
-/* Кнопки */
+/* Buttons */
 .button {
   border: 1px solid #fff;
   color: #fff;
